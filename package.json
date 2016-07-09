@@ -1,0 +1,23 @@
+{
+  "name": "i-can-hear-for-100-miles",
+  "version": "1.0.0",
+  "description": "I Can Hear for 100 Miles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djensenius/ICanHearFor100Miles.git"
+  },
+  "author": "David Jensenius",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/djensenius/ICanHearFor100Miles/issues"
+  },
+  "homepage": "https://github.com/djensenius/ICanHearFor100Miles#readme",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "supercolliderjs": "^0.11.3"
+  }
+}
