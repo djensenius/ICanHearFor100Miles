@@ -18,6 +18,8 @@
   "homepage": "https://github.com/djensenius/ICanHearFor100Miles#readme",
   "dependencies": {
     "lodash": "^4.13.1",
+    "node-ffprobe": "^1.2.2",
+    "osc": "^2.1.0",
     "supercolliderjs": "^0.11.3"
   }
 }
