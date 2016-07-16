@@ -39,6 +39,7 @@ function processSounds(sounds) {
            tagSounds = _.concat(tagSounds, sound);
            sounds = _.reject(sounds, sound);
            count[tag]--;
+           totalCount--;
            if (count[tag] == 0) {
              console.log("TOTALLY DONE ", tag);
              sortedSounds[tag] = tagSounds;
@@ -48,12 +49,22 @@ function processSounds(sounds) {
      });
   });
 
+
   setTimeout(function () {
     console.log(sortedSounds);
     console.log("Completely done");
     //Arrange sounds randomly using playOrder
-    startMusic();
+    //startMusic();
+    console.log(sounds);
+    fs.writeFile("sorted-sounds.json", JSON.stringify(sortedSounds), function(err) {
+    if(err) {
+        return console.log(err);
+    }
+
+    console.log("The file was saved!");
+});
   }, 2000);
+
 }
 
 function getDegrees(lat1, long1, lat2, long2, headX) {
